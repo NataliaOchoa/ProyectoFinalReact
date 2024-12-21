@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;  
+  margin: 0;  
+  padding: 0; 
+  font-family: Arial, sans-serif;  
+  display: flex;  
+  flex-direction: column;
+  box-sizing: border-box;  
+}
+
+main {
+  flex: 1; 
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.seccion {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  min-height: 100vh; 
+}
+
+h1, h2 {
+  font-family: Arial, sans-serif; 
+  color: #333; 
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-family: Arial, sans-serif; 
+  width: 100%;
+  position: relative;  
+  bottom: 0; 
+}
+
+/* .inicio-imagenes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inicio-imagenes img {
+  width: 110%;  
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+} */
+
+/* Estilos para la sección de Inicio */
+.inicio-imagenes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inicio-imagenes .producto {
+  width: 30%;
+  text-align: center; 
+}
+
+.inicio-imagenes img {
+  width: 100%;  
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; 
+}
+/* Estilos para la sección de "Productos" */
+.productos-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.productos-imagenes .producto {
+  text-align: center;
+}
+
+.productos-imagenes img {
+  width: 100%; 
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.productos-imagenes .producto p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Sección de Ofertas */
+.ofertas-imagenes {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.ofertas-imagenes .oferta {
+  width: 45%; 
+  text-align: center;
+}
+
+.ofertas-imagenes img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.ofertas-imagenes .oferta p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
